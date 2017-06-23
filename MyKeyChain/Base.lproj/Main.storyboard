@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2i-nu-MXI" userLabel="saveUsernameTextfield">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="484-Fc-a24"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-UC-A1T" userLabel="savePasswordTextfield">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="userid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvp-h7-7Be" userLabel="saveUseridTextfield">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgT-bx-YYF">
+                                <state key="normal" title="存储以上信息"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dTu-QG-hbL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-jp-gfJ" userLabel="finduserInfo">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-BY-X0z">
+                                <state key="normal" title="查找账号信息"/>
+                                <connections>
+                                    <action selector="findButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6RZ-q9-G5s"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="svs-fv-Qi7" userLabel="deleteUserInfo">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1I-L8-ISx">
+                                <state key="normal" title="删除账号信息"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIO-Z3-DmX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1E-iK-IAQ">
+                                <state key="normal" title="删除全部账号信息"/>
+                                <connections>
+                                    <action selector="deleteAllButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2N-Cv-4f3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-27-MEw">
+                                <state key="normal" title="查找数据条数"/>
+                                <connections>
+                                    <action selector="findNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yq9-6U-krc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="svs-fv-Qi7" firstAttribute="width" secondItem="SMV-jp-gfJ" secondAttribute="width" id="1Kh-tr-AaD"/>
+                            <constraint firstItem="q0h-UC-A1T" firstAttribute="width" secondItem="R2i-nu-MXI" secondAttribute="width" id="2sr-IK-qee"/>
+                            <constraint firstItem="E1I-L8-ISx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="32q-Pp-g2t"/>
+                            <constraint firstItem="s1E-iK-IAQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5nS-6e-HKW"/>
+                            <constraint firstItem="lvp-h7-7Be" firstAttribute="width" secondItem="q0h-UC-A1T" secondAttribute="width" id="8X4-fS-rqV"/>
+                            <constraint firstItem="rrX-BY-X0z" firstAttribute="top" secondItem="SMV-jp-gfJ" secondAttribute="bottom" constant="10" id="8bL-yP-e0O"/>
+                            <constraint firstItem="E1I-L8-ISx" firstAttribute="top" secondItem="svs-fv-Qi7" secondAttribute="bottom" constant="10" id="G77-g1-cok"/>
+                            <constraint firstItem="zgT-bx-YYF" firstAttribute="top" secondItem="lvp-h7-7Be" secondAttribute="bottom" constant="20" id="KHi-0H-fzQ"/>
+                            <constraint firstItem="svs-fv-Qi7" firstAttribute="top" secondItem="rrX-BY-X0z" secondAttribute="bottom" constant="54" id="L10-wb-lhc"/>
+                            <constraint firstItem="R2i-nu-MXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QeA-yd-Jtv"/>
+                            <constraint firstItem="svs-fv-Qi7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ubg-xh-Ea5"/>
+                            <constraint firstItem="q0h-UC-A1T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VqN-3E-PK0"/>
+                            <constraint firstItem="SMV-jp-gfJ" firstAttribute="width" secondItem="lvp-h7-7Be" secondAttribute="width" id="Zmn-Bm-3o0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ol5-27-MEw" secondAttribute="trailing" constant="10" id="agg-15-T00"/>
+                            <constraint firstItem="lvp-h7-7Be" firstAttribute="top" secondItem="q0h-UC-A1T" secondAttribute="bottom" constant="10" id="cTx-Z2-qtH"/>
+                            <constraint firstItem="R2i-nu-MXI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fk1-Ci-gQj"/>
+                            <constraint firstItem="SMV-jp-gfJ" firstAttribute="top" secondItem="zgT-bx-YYF" secondAttribute="bottom" constant="54" id="hRC-dy-WcI"/>
+                            <constraint firstItem="q0h-UC-A1T" firstAttribute="top" secondItem="R2i-nu-MXI" secondAttribute="bottom" constant="10" id="mrN-Wf-yJ8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s1E-iK-IAQ" secondAttribute="bottom" constant="10" id="rj9-YI-LfF"/>
+                            <constraint firstItem="SMV-jp-gfJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v4c-Q6-whX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ol5-27-MEw" secondAttribute="bottom" constant="10" id="wTb-Aa-v00"/>
+                            <constraint firstItem="lvp-h7-7Be" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wyr-hh-mbD"/>
+                            <constraint firstItem="zgT-bx-YYF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xZJ-6k-yeH"/>
+                            <constraint firstItem="rrX-BY-X0z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8I-fF-n4F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteUserInfo" destination="svs-fv-Qi7" id="IuI-e3-nNJ"/>
+                        <outlet property="finduserInfo" destination="SMV-jp-gfJ" id="Suo-vh-dob"/>
+                        <outlet property="savePasswordTextfield" destination="q0h-UC-A1T" id="pyW-AF-Aek"/>
+                        <outlet property="saveUseridTextfield" destination="lvp-h7-7Be" id="Plb-bI-Pp6"/>
+                        <outlet property="saveUsernameTextfield" destination="R2i-nu-MXI" id="esI-QA-Ck2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
