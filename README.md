@@ -1,0 +1,3 @@
+# ZXYKeyChain
+用keychain存储是将信息存入钥匙链中，比NSUserDefaults安全而且app删除还会存在,所以用于存储唯一标识和重要的密码等信息。
+我在KeychainWrapper的基础上做了封装，用了一个单例类ZXYUserManager来对Keychain操作,公开了四个属性和五个方法。
