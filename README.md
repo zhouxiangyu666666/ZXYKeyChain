@@ -1,13 +1,13 @@
-                          一.关于Keychain
+一.关于Keychain
 用Keychain存储信息是将信息存入钥匙链中，比NSUserDefaults安全而且app删除还会存在
 所以用于存储唯一标识和重要的密码等信息。
 我在KeychainWrapper的基础上做了封装，用了一个单例类ZXYUserManager来对Keychain操作
 提供了一个ZXYUserManager.h类，和ZXYKeyChain.a的静态库。
-                          二.工程配置
+二.工程配置
     1. 将ZXYKeyChain.a和ZXYUserManager.h导入到你工程中。
     2. 导入Security.framework系统库，将xcode中Capabilities的Keychain Sharing功能打开，在BuildSetting中
 搜索Other Linker  Flags，将入-ObjC
-                          三.使用方法
+三.使用方法
     在ZXYUserManager单利中我公开了七个方法。
     方法1: 单利方法 +(ZXYUserManager *)shareInterface; 
     方法2: 设置主键 - (void)setYourMainKey:(NSString *)mainKey; 
