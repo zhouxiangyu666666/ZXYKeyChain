@@ -36,12 +36,12 @@
 /**
  以主键为key保存UserInfo
  */
--(void)saveUserInfoWithDictionary:(NSDictionary*)UserDic;
+-(BOOL)saveUserInfoWithDictionary:(NSDictionary*)UserDic;
 
 /**
  以主键为key删除UserInfo
  */
--(void)deleteUserinfoWithMainKey:(NSString*)mainKey;
+-(BOOL)deleteUserinfoWithMainKey:(NSString*)mainKey;
 
 /**
  清空存储

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F1846C51F46F2F1006B71E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1846C41F46F2F1006B71E3 /* ViewController.m */; };
 		3F1846C71F46F30E006B71E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1846C61F46F30E006B71E3 /* Main.storyboard */; };
-		3F1846C91F46F316006B71E3 /* libZXYKeyChain in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1846C81F46F316006B71E3 /* libZXYKeyChain */; };
+		3F1846CC1F46F6DA006B71E3 /* libZXYKeyChain in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1846CB1F46F6DA006B71E3 /* libZXYKeyChain */; };
 		C0B46ABD1EFA631E00062CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B46ABC1EFA631E00062CFB /* main.m */; };
 		C0B46AC01EFA631E00062CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B46ABF1EFA631E00062CFB /* AppDelegate.m */; };
 		C0B46AC81EFA631E00062CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B46AC71EFA631E00062CFB /* Assets.xcassets */; };
@@ -41,8 +41,8 @@
 		3F1846C31F46F2F1006B71E3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F1846C41F46F2F1006B71E3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3F1846C61F46F30E006B71E3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		3F1846C81F46F316006B71E3 /* libZXYKeyChain */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZXYKeyChain; sourceTree = "<group>"; };
-		3F1846CA1F46F358006B71E3 /* ZXYUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYUserManager.h; sourceTree = "<group>"; };
+		3F1846CB1F46F6DA006B71E3 /* libZXYKeyChain */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZXYKeyChain; sourceTree = "<group>"; };
+		3F1846CD1F46F75E006B71E3 /* ZXYUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXYUserManager.h; sourceTree = "<group>"; };
 		C0B46AB81EFA631E00062CFB /* MyKeyChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKeyChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B46ABC1EFA631E00062CFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0B46ABE1EFA631E00062CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1846C91F46F316006B71E3 /* libZXYKeyChain in Frameworks */,
+				3F1846CC1F46F6DA006B71E3 /* libZXYKeyChain in Frameworks */,
 				C0B46AF91EFA652000062CFB /* Foundation.framework in Frameworks */,
 				C0B46AF41EFA641C00062CFB /* Security.framework in Frameworks */,
 			);
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				C0FF2C181EFBB70B008BB19A /* MyKeyChain.entitlements */,
-				3F1846C81F46F316006B71E3 /* libZXYKeyChain */,
-				3F1846CA1F46F358006B71E3 /* ZXYUserManager.h */,
+				3F1846CD1F46F75E006B71E3 /* ZXYUserManager.h */,
+				3F1846CB1F46F6DA006B71E3 /* libZXYKeyChain */,
 				C0B46ABE1EFA631E00062CFB /* AppDelegate.h */,
 				C0B46ABF1EFA631E00062CFB /* AppDelegate.m */,
 				3F1846C31F46F2F1006B71E3 /* ViewController.h */,
