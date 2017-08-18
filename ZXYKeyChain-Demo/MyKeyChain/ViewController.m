@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //主键只需设置一次
-    [[ZXYUserManager shareInterface] setMainKey:@"username"];
+    [[ZXYUserManager shareInterface] setYourMainKey:@"username"];
 }
 - (IBAction)saveButton:(UIButton *)sender {
     //主键和其他的key的名称自己定，之后不要换key名称

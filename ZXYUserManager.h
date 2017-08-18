@@ -4,9 +4,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ZXYUserManager : NSObject
-//主键
-@property(nonatomic,strong)NSString* mainKey;
-
 /*
  @method shareInterface
  @abstract IAParamManager单例方法
