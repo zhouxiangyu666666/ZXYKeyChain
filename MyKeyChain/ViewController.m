@@ -21,26 +21,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //主键只需设置一次
+    [[ZXYUserManager shareInterface] setMainKey:@"username"];
 }
 - (IBAction)saveButton:(UIButton *)sender {
-    [ZXYUserManager shareInterface].userAccount=_saveUsernameTextfield.text;
-    [ZXYUserManager shareInterface].userPassWord=_savePasswordTextfield.text;
-    [ZXYUserManager shareInterface].userid=_saveUseridTextfield.text;
-    [[ZXYUserManager shareInterface] saveUserInfoInKeyChain];
+    //主键和其他的key的名称自己定，之后不要换key名称
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:_saveUsernameTextfield.text,@"username",_savePasswordTextfield.text,@"password",_saveUseridTextfield.text,@"userid",nil];
+    [[ZXYUserManager shareInterface] saveUserInfoWithDictionary:dic];
 }
 - (IBAction)findButton:(id)sender {
-    [[ZXYUserManager shareInterface] getUserInfoFromKeyChainWithAccount:_finduserInfo.text];
-    NSLog(@"%@,%@",[ZXYUserManager shareInterface].userPassWord,[ZXYUserManager shareInterface].userid);
+    NSLog(@"%@",[[ZXYUserManager shareInterface] getUserInfoFromKeyChainWithMainKey:_finduserInfo.text]);
 }
 - (IBAction)deleteButton:(id)sender {
-    [[ZXYUserManager shareInterface] deleteUserinfoWithAccount:_deleteUserInfo.text];
+      [[ZXYUserManager shareInterface] deleteUserinfoWithMainKey:_deleteUserInfo.text];
 }
 
 - (IBAction)deleteAllButton:(id)sender {
-    [[ZXYUserManager shareInterface] clearAcount];
+   [[ZXYUserManager shareInterface] clearAcount];
 }
 - (IBAction)findNumberButton:(id)sender {
-    NSLog(@"%lu",(unsigned long)[ZXYUserManager shareInterface].getUserAccountList.count);
+    NSLog(@"%lu",(unsigned long)[[[ZXYUserManager shareInterface] getUserAccountList] count]);
 }
 
 
