@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/zhouxiangyu666666/ZXYKeyChain.git", :tag => "#{s.version}" }
 
-  s.source_files  = "ZXYKeyChain/*"
+  s.source_files  = "ZXYKeyChain/ZXYKeyChain/*"
 
 end
