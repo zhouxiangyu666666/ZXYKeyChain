@@ -34,7 +34,7 @@ ZXYKeyChain
 
 方法5: 查询信息：-(NSDictionary)getUSerInfoFromKeyChainWithMainKey:(NSString* )mainKey: 通过主键查询对应的存储信息，会以dictionary的形式返回。目前只能支持主键查询。</br>
 
-![Aaron Swartz](https://raw.githubusercontent.com/zhouxiangyu666666/ZXYKeyChainManager/master/picture/ 6.png)
+![Aaron Swartz](https://raw.githubusercontent.com/zhouxiangyu666666/ZXYKeyChainManager/master/picture/6.png)
 
 方法6：删除方法：-(BOOL)deleteUSerinfoWithMainKey:(NSString*)mainKey:通过主键删除对应的存储信息，目前 也只能支持主键删除。 方法7: 清空当前手机此app存储的所有信息（慎用) -(void)clearAccout;</br>
 
